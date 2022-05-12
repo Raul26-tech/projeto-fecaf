@@ -47,7 +47,7 @@ html,body{
 }
 
 .input-global{
-    height: 50px;
+    height: 40px;
     margin-top: 2rem;
     border-radius: 30px;
     border: 0;
@@ -66,9 +66,9 @@ aside {
 }
 
 button {
-    width: 100%;
+    width: 40%;
     height: 50px;
-    margin-top: 2rem;
+    margin: 2rem 0.75rem;
     border-radius: 30px;
     border: 0;
     outline: 0;
@@ -79,6 +79,11 @@ button {
     font-weight: 600;
     box-shadow: 2px 2px 30px rgba(0,0,0,0.3);
     transition: 0.2s;
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
 }
 
 button:hover {
@@ -103,7 +108,18 @@ img {
     }
 
     .inputs {
+        width: 100%;
         font-size: 14px;
+        align-items: center;
+    }
+
+    .input-global {
+        width: 80%;
+    }
+
+    button {
+        width: 30%;
+        align-items: center;
     }
 
     img {
