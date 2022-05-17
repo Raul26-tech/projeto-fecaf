@@ -1,18 +1,120 @@
+:root {
+  --title: "Ubuntu";
+  --theme: #011e36;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body,html {
-    height: 100%;
-    overflow: hidden;
+body,
+html {
+  height: 100%;
+  overflow: hidden;
+  background: var(--theme);
 }
 
-/* h1 {
-    align-items: center;
+
+.title {
+    position: relative;
     text-align: center;
-    font-family: 'Ubuntu';
-    font-size: 24px;
-    margin: 8rem;
-} */
+    margin: 2.5rem;
+    color: #fff;
+    font-family: var(--title);
+    font-size: 50px;
+}
+
+.container {
+    width: 50%;
+    height: 30%;
+    margin: 1.5rem 2rem;
+    background: #fff;
+    border-radius: 20px;
+}
+
+p {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 20px;
+    font-family: var(--title);
+    font-weight: 600;
+    color: #011e36;
+    transition: 0.3s;
+}
+
+p:hover {
+    transform: translateY(4px);
+}
+
+.avatar-images {
+  width: 90%;
+  height: 80%;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  border-radius: 20px;
+  justify-content: space-around;
+}
+
+ img {
+  width: 25%;
+  align-items: center;
+  text-align: center; 
+  transition: 0.4s;
+}
+
+img:hover {
+    transform: translateY(4px);
+
+}
+
+form {
+    position:absolute;
+    width: 40%;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+form div.single-inputs {
+    position: relative;
+    margin: 0 auto;
+}
+
+form div.single-inputs label {
+    position: absolute;
+    /* bottom: 0.5rem; */
+    font-family: var(--title);
+    text-align: center;
+    align-items: center;
+    left: 5%;
+    cursor: text;
+    transition: all 0.5s ease-in-out;
+}
+
+form div.single-inputs input {
+    width: 400px;
+    margin-bottom: 2.5rem;
+    padding: 0.75rem;
+    border: 0;
+    background: transparent;
+    border-bottom: 2px solid rgba(19, 20, 22, 0.8);
+    transition: all 0.5s ease-in-out;
+    outline: 0
+}
+
+form div.single-inputs input:focus,
+form div.single-inputs input:valid {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.76);
+}
+
+form div.single-inputs input:focus ~ label,
+form div.single-inputs input:valid ~ label {
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #fff;
+}
+

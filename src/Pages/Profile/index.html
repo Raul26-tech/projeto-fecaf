@@ -1,55 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link
-    rel="shortcut icon"
-    href="../../../assets/Logo_2.png"
-    type="image/x-icon"
-  />
-  <!--Fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap"
-    rel="stylesheet"
-  />
-  <title>Reeduke</title>
-  <link rel="stylesheet" href="style.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+<link rel="shortcut icon" href="../../../assets/Logo_2.png" type="image/x-icon" />
+<!--Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet" />
+<title>Reeduke</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
+
 <body>
-    <h1 class="animate__animated animate__fadeInDown animate__delay-1s">Perfil</h1>
+    <h1 class="title animate__animated animate__fadeInDown animate__delay-1s">Perfil</h1>
     <section class="container">
         <p>Escolha seu avatar</p>
         <div class="avatar-images">
-            <!-- <div class="content">
-                <img src="../../../assets/maleAvt.svg" alt="">
-            </div>
-            <div class="content">
-                <img src="../../../assets/femaleAvt.svg" alt="">
-            </div> -->
+            <img src="../../../assets/maleAvt.svg" alt="">
+            <img src="../../../assets/femaleAvt.svg" alt="">
         </div>
     </section>
     <main class="Content-main">
-        <form >
-          <div class="single-inputs">  
-            <input type="text" id="full-name" required>
-            <label for="Full name">Nome completo:</label>
-        </div>
+        <form>
+            <div class="single-inputs">
+                <input type="text" id="full-name" required>
+                <label for="Full name">Nome completo:</label>
+            </div>
 
-        <div class="single-inputs">
-            <input type="number" id="phone" required>
-            <label for="Full name">Telefone/Celular:</label>
-        </div>  
+            <div class="single-inputs">
+                <input type="number" id="phone" required>
+                <label for="Full name">Telefone/Celular:</label>
+            </div>
 
-        <div class="single-inputs">
-            <input type="email" id="email" required>
-            <label for="E-mail">E-mail:</label>
-        </div> 
-
+            <div class="single-inputs">
+                <input type="email" id="email" required>
+                <label for="E-mail">E-mail:</label>
+            </div>
         </form>
+        <!-- <form class="localization-adress">
+            <div class="single-inputs">
+                <label for="Full name">Digite seu Cep :</label>
+                <input type="text" id="full-name" required>
+            </div>
+
+            <div class="single-inputs">
+                <input type="number" id="phone" required>
+                <label for="Full name">Rua:</label>
+            </div>
+
+            <div class="single-inputs">
+                <input type="email" id="email" required>
+                <label for="E-mail">Bairro:</label>
+            </div>
+            <div class="single-inputs">
+                <input type="email" id="email" required>
+                <label for="E-mail">Complemento</label>
+            </div>
+        </form> -->
+        <button type="submit"><a href="">Finalizar</a></button>
     </main>
 </body>
+
 </html>
