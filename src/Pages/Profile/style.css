@@ -20,14 +20,14 @@ html {
 .title {
     position: relative;
     text-align: center;
-    margin: 2.5rem;
+    margin: 2rem;
     color: #fff;
     font-family: var(--title);
     font-size: 50px;
 }
 
 .container {
-    width: 50%;
+    width: 40%;
     height: 30%;
     margin: 1.5rem 2rem;
     background: #fff;
@@ -59,7 +59,7 @@ p:hover {
 }
 
  img {
-  width: 25%;
+  width: 22%;
   align-items: center;
   text-align: center; 
   transition: 0.4s;
@@ -70,13 +70,19 @@ img:hover {
 
 }
 
+.content-main {
+    margin: 1.5rem;
+}
+
 form {
     position:absolute;
-    width: 40%;
-    margin: 2rem;
-    display: flex;
+    width: auto;
+    height: auto;
+    left: 10%;
     flex-direction: column;
     padding: 1.5rem;
+    align-items: center;
+    justify-content: center;
 }
 
 form div.single-inputs {
@@ -93,17 +99,17 @@ form div.single-inputs label {
     left: 5%;
     cursor: text;
     transition: all 0.5s ease-in-out;
+    color: #007DE7;
 }
 
 form div.single-inputs input {
-    width: 400px;
+    width: 100%;
     margin-bottom: 2.5rem;
     padding: 0.75rem;
     border: 0;
     background: transparent;
-    border-bottom: 2px solid rgba(19, 20, 22, 0.8);
-    transition: all 0.5s ease-in-out;
-    outline: 0
+    border-bottom: 2px solid #007DE7;
+    outline: 0;
 }
 
 form div.single-inputs input:focus,
@@ -118,3 +124,33 @@ form div.single-inputs input:valid ~ label {
     color: #fff;
 }
 
+
+.inputs-localization { 
+
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    left: 45%;
+    bottom: 20%;
+    background: rgba(0,125,231, 0.5);
+    border-radius: 20px; 
+    padding: 2rem;
+}
+
+ .frm-row {
+     width: 100%;
+     margin-bottom: 2rem;
+ }
+
+ .frm-row label {
+     display: block;
+     margin-bottom: 3px;
+     font-family: var(--title);
+     color: #fff;
+ }
+
+ .frm-row input {
+     width: 100%;
+ }

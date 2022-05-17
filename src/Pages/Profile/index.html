@@ -16,11 +16,12 @@
     <section class="container">
         <p>Escolha seu avatar</p>
         <div class="avatar-images">
-            <img src="../../../assets/maleAvt.svg" alt="">
-            <img src="../../../assets/femaleAvt.svg" alt="">
+            <img src="../../../assets/maleTwo.svg" alt="Avatar">
+            <img src="../../../assets/maleAvt.svg" alt="Avatar">
+            <img src="../../../assets/femaleAvt.svg" alt="Avatar">
         </div>
     </section>
-    <main class="Content-main">
+    <main class="content-main">
         <form>
             <div class="single-inputs">
                 <input type="text" id="full-name" required>
@@ -37,28 +38,29 @@
                 <label for="E-mail">E-mail:</label>
             </div>
         </form>
-        <!-- <form class="localization-adress">
-            <div class="single-inputs">
-                <label for="Full name">Digite seu Cep :</label>
-                <input type="text" id="full-name" required>
-            </div>
-
-            <div class="single-inputs">
-                <input type="number" id="phone" required>
-                <label for="Full name">Rua:</label>
-            </div>
-
-            <div class="single-inputs">
-                <input type="email" id="email" required>
-                <label for="E-mail">Bairro:</label>
-            </div>
-            <div class="single-inputs">
-                <input type="email" id="email" required>
-                <label for="E-mail">Complemento</label>
-            </div>
-        </form> -->
-        <button type="submit"><a href="">Finalizar</a></button>
     </main>
+    <form class="inputs-localization">
+        <div class="frm-row">
+            <label for="cep">cep</label>
+            <input type="text" name="cep" id="cep">
+        </div>
+        <div class="frm-row">
+            <label for="rua">rua</label>
+            <input type="text" name="rua" id="rua">
+        </div>
+        <div class="frm-row">
+            <label for="bairro">bairro</label>
+            <input type="text" name="bairro" id="bairro">
+        </div>
+        <div class="frm-row">
+            <label for="cidade">cidade</label>
+            <input type="text" name="cidade" id="cidade">
+        </div>
+        <div class="frm-row">
+            <label for="estado">estado</label>
+            <input type="text" name="estado" id="estado">
+        </div>
+    </form>
 </body>
 
 </html>
