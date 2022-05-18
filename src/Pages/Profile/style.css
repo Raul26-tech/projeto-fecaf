@@ -9,11 +9,11 @@
   box-sizing: border-box;
 }
 
-body,
-html {
+body {
   height: 100%;
   overflow: hidden;
   background: var(--theme);
+  overflow: visible;
 }
 
 
@@ -67,12 +67,8 @@ p:hover {
 
 img:hover {
     transform: translateY(4px);
-
 }
 
-.content-main {
-    margin: 1.5rem;
-}
 
 form {
     position:absolute;
@@ -175,7 +171,8 @@ form div.single-inputs input:valid ~ label {
     border: 0;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     font-family: var(--title);
-    
+    letter-spacing: 0.1rem;
+    transition: 0.3s;
  }
 
  button a {
@@ -186,6 +183,228 @@ form div.single-inputs input:valid ~ label {
      transition: 0.4s;
  }
 
+ button a:hover{
+     color: #007DE7;
+ }
+
  button:active {
     transform: translateY(3px);   
- }    
+ } 
+ 
+ button:hover {
+    letter-spacing: 0.20em;
+    box-shadow: 0 0 35px #6bcfc4;
+ }
+
+ @media screen and (max-width: 1200px) {
+     .container {
+         width: 30%;
+         align-items: center;
+     }
+
+     .container {
+         width: 100%;
+         height: 35vh;
+         align-items: center;
+         margin: 0 auto;
+
+     }
+
+     .avatar-images {
+         width: 50%;
+         margin-top: 0;
+     }
+
+     main {
+        font-size: 14px;
+        margin: 0 auto;
+        align-items: center;
+        position: relative;
+     }
+
+     .single-inputs {
+         margin: 0 auto;
+         align-items: center;
+         position: absolute;
+         text-align: center;
+     }
+
+     .inputs-localization { 
+         height: 80vh;
+         top: 60%;
+         left: 40%;
+    }
+ }
+
+ @media screen and (max-width: 1100px) {
+    .container {
+        width: 30%;
+        align-items: center;
+    }
+
+    .container {
+        width: 100%;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .avatar-images {
+        width: 50%;
+        margin-top: 0;
+    }
+
+    main {
+       font-size: 14px;
+       margin: 0 auto;
+       align-items: center;
+       position: relative;
+    }
+
+    .single-inputs {
+        margin: 0 auto;
+        align-items: center;
+        position: absolute;
+        text-align: center;
+    }
+
+    /* .inputs-localization { 
+        display: block;
+       position: relative;
+   } */
+}
+
+ @media screen and (max-width: 800px) {
+    .container {
+        align-items: center;
+    }
+
+    .avatar-images img {
+        width: 30%;
+        justify-content: space-around;
+    }
+
+    .single-inputs {
+
+        align-content: center;
+        margin: 0 auto;
+        align-items: center;
+        left: 80%;
+    }
+
+    .inputs-localization { 
+        width: 60%;
+        margin-top: 35%;
+        margin-left: -20%;
+        align-items: center;
+        justify-content: left;
+
+    }
+
+    button {
+        width: 40%;
+        justify-items: center;
+        margin-left: 55%;
+    }
+
+    
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        align-items: center;
+    }
+
+    .inputs-localization { 
+        position: relative;
+    }
+
+    .single-inputs {
+        align-content: center;
+        margin: 0 auto;
+        align-items: center;
+        left: 70%;
+    }
+
+    .inputs-localization { 
+        width: 60%;
+        margin-top: 40%;
+        margin-left: -20%;
+        align-items: center;
+        justify-content: left;
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 80%;
+        align-items: center;
+    }
+
+    .single-inputs {
+        align-content: center;
+        align-items: center;
+        left: 20%;
+        position: relative;
+        bottom: -5%;
+    }
+
+    .inputs-localization { 
+        width: 60%;
+        height: 90vh;
+        margin-top: 45%;
+        margin-left: -20%;
+        align-items: center;
+        justify-content: left;
+        background: transparent;
+    }
+
+    button {
+        
+        width: 100%;
+        height: 20vh;
+        justify-items: center;
+        align-items: center;
+        margin-right: 55%;
+    }
+
+}
+
+
+@media screen and (max-width: 420px) {
+    .container {
+        width: 80%;
+        align-items: center;
+    }
+
+    .single-inputs {
+        align-content: center;
+        align-items: center;
+        left: 20%;
+        position: relative;
+        bottom: -5%;
+    }
+
+    .inputs-localization { 
+        width: 60%;
+        height: 90vh;
+        margin-top: 45%;
+        margin-left: -20%;
+        align-items: center;
+        justify-content: left;
+        background: transparent;
+    }
+
+    button {
+        
+        width: 100%;
+        height: 20vh;
+        justify-items: center;
+        align-items: center;
+        margin-right: 55%;
+    }
+
+}
