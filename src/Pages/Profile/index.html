@@ -16,56 +16,50 @@
 </head>
 
 <body>
-    <h1 class="title animate__animated animate__fadeInDown animate__delay-1s">Perfil</h1>
-    <section class="container">
-        <p>Escolha seu avatar</p>
-        <div class="avatar-images">
-            <img src="../../../assets/maleTwo.svg" alt="Avatar">
-            <img src="../../../assets/maleAvt.svg" alt="Avatar">
-            <img src="../../../assets/femaleAvt.svg" alt="Avatar">
-        </div>
-    </section>
     <main >
+        <h1 class="title animate__animated animate__fadeInDown animate__delay-1s">Perfil</h1>
         <form>
             <div class="single-inputs">
                 <input type="text" id="full-name" required>
-                <label for="Full name">Nome completo:</label>
+                <label for="Full name">Nome de usuario:</label>
             </div>
 
             <div class="single-inputs">
                 <input type="number" id="phone" required>
-                <label for="Full name">Telefone/Celular:</label>
+                <label for="Full name">Senha:</label>
             </div>
 
             <div class="single-inputs">
                 <input type="email" id="email" required>
                 <label for="E-mail">E-mail:</label>
             </div>
+            <!-- INPUT CEP -->
+            <div class="frm-row">
+                <label for="cep">cep</label>
+                <input type="text" name="cep" id="cep" maxlength="8">
+            </div>
+            <div class="frm-row">
+                <label for="rua">rua</label>
+                <input type="text" name="rua" id="rua">
+            </div>
+            <div class="frm-row">
+                <label for="bairro">bairro</label>
+                <input type="text" name="bairro" id="bairro">
+            </div>
+            <div class="frm-row">
+                <label for="cidade">cidade</label>
+                <input type="text" name="cidade" id="cidade">
+            </div>
+            <div class="frm-row">
+                <label for="estado">estado</label>
+                <input type="text" name="estado" id="estado">
+            </div>
+            <button type="submit"><a href="../Dashboard/index.html">Finalizar</a></button> 
         </form>
     </main>
-    <form class="inputs-localization">
-        <div class="frm-row">
-            <label for="cep">cep</label>
-            <input type="text" name="cep" id="cep" maxlength="8">
-        </div>
-        <div class="frm-row">
-            <label for="rua">rua</label>
-            <input type="text" name="rua" id="rua">
-        </div>
-        <div class="frm-row">
-            <label for="bairro">bairro</label>
-            <input type="text" name="bairro" id="bairro">
-        </div>
-        <div class="frm-row">
-            <label for="cidade">cidade</label>
-            <input type="text" name="cidade" id="cidade">
-        </div>
-        <div class="frm-row">
-            <label for="estado">estado</label>
-            <input type="text" name="estado" id="estado">
-        </div>
-        <button type="submit"><a href="">Finalizar</a></button> 
-    </form>
+    
+        
+   
 
     
     <script src="../../scripts/consultaCep.js"></script>
