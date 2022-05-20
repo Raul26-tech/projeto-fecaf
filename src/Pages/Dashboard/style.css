@@ -104,6 +104,19 @@ body {
     font-family:fontAwesome;
 }
 
+
+main {
+    width: 50%;
+    position: absolute;
+    margin: 2rem;
+    top: 0;
+    left: 25%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+
 @media screen and (max-width:768px) {
     .navigation {
         left: -60px;
