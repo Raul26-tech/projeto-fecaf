@@ -127,5 +127,32 @@ img {
     }
 }
 
+@media screen and (max-width: 789px) {
+    body {
+        font-size: 12px;
+    }
+
+   .main-content {
+        align-items: center;
+   }
+
+   .content {
+       align-items: center;
+       justify-items: center;
+       margin: 5rem 0;
+   }
+
+   input {
+       width: 100%;
+   }
+
+    button {
+        width: 40%;
+        font-size: auto;
+        align-items: center;
+    }
+}
+
+
 
 
