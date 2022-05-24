@@ -32,10 +32,31 @@ const chartGraph = new Chart(ctx, {
       {
         label: "Contas de LUZ dos últimos meses",
         data: [144, 200, 145, 111, 310, 200, 204, 98, 247, 145, 371, 145],
-        borderWidth: 5,
-        borderColor: "rgba(255,255,255,0.8)",
+        borderWidth: 4,
+        borderColor: "#bcdffb",
+        backgroundColor: "transparent",
+      },
+      {
+        label: "Contas de ÁGUA dos últimos meses",
+        data: [144, 200, 145, 111, 200, 150, 200, 98, 247, 145, 371, 145],
+        borderWidth: 4,
+        borderColor: "#FFF",
+        backgroundColor: "transparent",
+      },
+      {
+        label: "Contas de GÁZ dos últimos meses",
+        data: [104, 210, 115, 111, 190, 152, 120, 98, 247, 145, 241, 145],
+        borderWidth: 4,
+        borderColor: "aqua",
         backgroundColor: "transparent",
       },
     ],
+  },
+  options: {
+    responsive: true,
+    title: {
+      display: true,
+      fontSize: 20,
+    },
   },
 });

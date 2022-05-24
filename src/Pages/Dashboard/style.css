@@ -108,9 +108,12 @@ body {
 main {
     width: 50%;
     position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     margin: 2rem;
-    top: 0;
-    left: 25%;
+    top: 10%;
+    left: 23.2%;
     border-radius: 5px;
     overflow: hidden;
 }
@@ -118,6 +121,13 @@ main {
 
 
 @media screen and (max-width:768px) {
+
+    body, html {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .navigation {
         left: -60px;
     }
@@ -126,4 +136,19 @@ main {
         left: 0;
         width: 100%;
     }
+}
+
+@media screen and (max-width:480px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main {
+        display: none;
+    }
+
+
 }
