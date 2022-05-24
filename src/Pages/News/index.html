@@ -25,6 +25,10 @@
     />
     <!-- Icons -->
     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
@@ -33,39 +37,22 @@
   </head>
 
   <body>
-    <div class="navigation">
-      <ul>
-        <li>
-          <a href="../Profile/index.html">
-            <span class="icon"><i class="fa-solid fa-user"></i></span>
-            <span class="title">User</span>
-          </a>
-        </li>
-       
-        <li>
-          <a href="../News/index.html">
-            <span class="icon"><i class="fa-solid fa-newspaper"></i></span>
-            <span class="title">News</span>
-          </a>
-        </li>
-        <li>
-          <a href="../Login/index.html">
-            <span class="icon"
-              ><i class="fa-solid fa-arrow-right-from-bracket"></i
-            ></span>
-            <span class="title">log out</span>
-          </a>
-        </li>
-      </ul>
+    <section class="content">
+      <h1 class="animate__backInDown">Bem vindo(a) ao Taboão da Serra</h1>
+      <p class="animate__pulse">Fique por dentro das nóticias</p>
+    </section>
+    <div class="card-news">
+      <img src="../../../assets/taboao.jpg" alt="" />
+      <div class="content-news animate__pulse">
+        <article>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae
+          officiis debitis, doloribus nulla sint vel, modi deleniti ullam ipsam
+          laudantium veniam, odio excepturi maxime explicabo minima fuga
+          laboriosam ab inventore.
+          <a href="https://www.otaboanense.com.br/temperatura-sobe-em-taboao-da-serra-e-regiao-durante-a-semana/">Saiba mais...</a>
+        </article>
+      </div>
     </div>
-    <div class="toogle" onclick="ToggleMenu()"></div>
-
-    <main>
-      <canvas class="line-chart"></canvas>
-    </main>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
-
-    <script src="../../scripts/menu.js"></script>
+    </div>
   </body>
 </html>

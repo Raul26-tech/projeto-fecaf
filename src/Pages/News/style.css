@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.content {
+    width: 100%;
+    height: 80vh;
+    transition: 0.2s;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #2D63B4;
+}
+
+h1 {
+    font-size: 60px;
+    color: #011e36;
+    margin: 2.5rem;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+p:hover {
+    transform: translateY(3px);
+}
+
+.card-news {
+    width: 22.2%;
+    display: inline-block;
+    position: absolute;
+    top: 45%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    left: 20%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    background: #F5F1F8;
+}
+
+.card-news img {
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+
+}
+
+.card-news:hover {
+    transform: translateY(4px);
+}
+
+article {
+    font-size: 14px;
+    margin-top: 10px;
+    letter-spacing: 0.1rem;
+    align-self: flex-start;
+    padding: 0.2rem;
+    margin-bottom: 10px;
+}
+

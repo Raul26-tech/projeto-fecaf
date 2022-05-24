@@ -33,7 +33,7 @@ const chartGraph = new Chart(ctx, {
         label: "Contas de LUZ dos últimos meses",
         data: [144, 200, 145, 111, 310, 200, 204, 98, 247, 145, 371, 145],
         borderWidth: 4,
-        borderColor: "#bcdffb",
+        borderColor: "#DF3B57",
         backgroundColor: "transparent",
       },
       {
